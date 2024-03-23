@@ -10,7 +10,8 @@ builder.Services
     .ConfigContext(builder.Configuration)
     .ConfigDependencyInjection()
     .ConfigureCors()
-    .ConfigBus(builder.Configuration);
+    .ConfigBus(builder.Configuration)
+    .AuthenticationConfigurations(builder.Configuration);
 
 var app = builder.Build();
 
